@@ -1,0 +1,252 @@
+:root {
+    --accent-color: #0D8FCD;
+    --accent-grey: #C9C9C9;
+    --dark-grey: #454343;
+    --light-grey: #ededed;
+    --accent-color-opacity: 0.8;
+  }
+  
+  html, p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+  
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.3);
+  }
+  page[size="A4"] {  
+    width: 21cm;
+    height: 29.7cm;
+  }
+  
+  
+  @media print {
+    body, page {
+      margin: 0;
+      box-shadow: 0;
+    }
+  }
+  
+  /* Styling for resume */
+  
+  .courses strong {
+    color: var(--dark-grey);
+      line-height: 1.3rem;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    height: 100%;
+  }
+  
+  .border-section {
+    border-left: 2px solid var(--light-grey);
+    padding-left: 1rem;
+    padding-
+    : 1rem;
+    
+  }
+  
+  .sv {
+    display: none;
+  }
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--dark-grey);
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+    opacity: var(--accent-color-opacity);
+  }
+  
+  h4 {
+    color: var(--dark-grey);
+    margin-bottom: 0;
+    margin-top: 0rem;
+  }
+  
+  p {
+    font-size: 0.9rem;
+  }
+  
+  ul, li {
+    font-size: 0.9rem;
+  }
+  
+  li {
+    margin-bottom: 0.3rem;
+  }
+  
+  .hidden-break {
+    visibility: hidden;
+    white-space: nowrap;
+  }
+  
+  .skill-button {
+    background-color: var(--accent-color);
+    border-radius: 1rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    color: white;
+  }
+  
+  .small-experience-grid p {
+    margin-bottom: 0.7rem !important;
+  }
+  
+  .small-experience {
+    border-radius: 1rem;
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+  }
+  
+  .experience-button {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border: 1px solid var(--accent-color);
+    margin-bottom: 0.3rem;
+    color: var(--accent-color);
+  }
+  
+  .link-to-website {
+    text-decoration: none;
+    color: var(--accent-color);
+  }
+  
+  .no-margin {
+    margin-top: 0;
+    margin-bottom: 0rem;
+  }
+  
+  /* Col left */
+  
+  .col-left {
+    /* top | right | bottom | left */
+    padding: 1.5rem 2.5rem 0 2.5rem;
+    padding-bottom: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 100%;
+  }
+  
+  #picture-div {
+    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+  }
+  
+  #picture-div img {
+    border-radius: 50%;
+    height: 109px;
+    width: auto;
+  }
+  
+  .experience-grid {
+    margin-bottom: 1.8rem;
+  }
+  
+  .experience-grid-smaller {
+    margin-bottom: 1rem;
+  }
+  
+  .experience-grid-smaller small {
+    color: var(--accent-color);
+    font-weight: 500;
+    opacity: var(--accent-color-opacity);
+  }
+  
+  .experience-grid small {
+    color: var(--accent-color);
+    font-weight: 500;
+    opacity: var(--accent-color-opacity);
+  }
+  
+  .experience-grid p {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Col right */
+  
+  .col-right {
+    /* top | right | bottom | left */
+    padding: 1.5rem 2.5rem 0 2.5rem;
+    /*border-left: 1px solid var(--accent-grey);*/
+  }
+  
+  .icon-div {
+    display: flex;
+    margin-bottom: 0.3rem;
+  }
+  
+  .icon-div span {
+    align-self: center;
+  }
+  
+  .icon-div .material-icons {
+    color: var(--accent-grey);
+    margin-right: 0.5rem;
+  }
+  
+  /* CSS for progress bar */
+  .progress-div {
+    margin-bottom: 3rem;
+  }
+  
+  .progress-div p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .progress-bar {
+      background: var(--accent-grey);
+      height: 3px;
+      width: 100%;
+  }
+  
+  .progress-bar:after {
+      content: '';
+      display: block;
+      background: var(--accent-color);
+      opacity: var(--accent-color-opacity);
+      height: 100%;
+  }
+  
+  .progress-100:after {
+    width: 100%;
+  }
+  
+  .progress-80:after {
+    width: 80%;
+  }
+  .progress-60:after {
+    width: 60%;
+  }
+  .progress-40:after {
+    width: 40%;
+  }
+  .progress-20:after {
+    width: 20%;
+  }
+  
